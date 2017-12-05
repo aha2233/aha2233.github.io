@@ -1,0 +1,439 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>IT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css样式/swiper.min.css">
+<style>
+<style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+		
+        font-size:18px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    ..swiper-container {
+        width: 100%;
+        height:348px;
+        
+    }
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+input{
+    width:160px;
+    height:25px;	
+}
+#top{
+	width:1335px;
+	height:80px;
+	background-color:#000;
+	margin:0px auto;
+}
+#top-logo{
+	margin-left:50px;
+	width:73px;
+	height:70px;
+	float:left;
+}
+#top-left{
+	width:290px;
+	height:70px;
+	float:left;
+	margin-top:10px;
+}
+#top-left-text{
+	width:100px;
+	height:30px;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+#top-center{
+	width:730px;
+	height:50px;
+	margin-top:10px;
+	float:left;
+}
+#top-right{
+	width:200px;
+	height:25px;
+	float:right;
+	margin-top:27px;
+	margin-right:50px;
+}
+#container{
+	width:1335px;
+	margin:0px 250px;
+	position:absolute;
+	z-index:999999;
+	left: -255px;
+	height: 796px;
+	top: -1px;
+}
+#header{
+	width:830px;
+	height:100px;
+	margin:0px auto;
+	margin-bottom: 10px;
+}
+#header-left{
+	width:300px;
+	height:20px;
+	margin:40px;
+	background-repeat: no-repeat;
+	float:left;
+}
+#header-left-1{
+	width:120px;
+	height:20px;
+	float:left;
+	margin-left:60px;	
+}
+#header-left-2{
+	width:100px;
+	height:20px;
+	float:right;
+	font-weight: bold;
+}
+#header-right{
+	width:300px;
+	height:20px;
+	margin:40px;
+	float:right;
+}	 
+#header-right-1{
+	width:120px;
+	height:20px;
+}
+#header-right-2{
+	width:180px;
+	height:20px;
+}	
+#content{
+	width:1000px;
+	height:500px;
+}
+#box1{
+	width:830px;
+	height:400px;
+	margin:0px auto;
+}
+#box1-top{
+	width:730px;
+	height:50px;
+	margin:0px 50px;
+}
+.box1-top-2{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	background-color:#F00;
+}
+.box1-top-1{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	transition:all 1s;
+}
+.box1-top-1:hover{
+	background-color:#F00;
+}
+.banner{
+	width:1330px;
+	height:400px;
+	margin:0 auto;
+	position:relative;
+}
+#box2{
+	width:830px;
+	height:215px;
+}
+#box3{
+	width:830px;
+	height:200px;
+}
+.pic-box{
+	float:left;
+	width:200px;
+	height:200px;
+	margin-top:5px;
+	margin-left:3px;
+	margin-right:2px;
+	border:1px solid gray;
+	background-color:#FFF;
+}
+.thumb-wrapper{
+	width:180px;
+	height:100px;
+	margin:5px;
+	border:1px solid gray;
+	float:left;
+}
+.pic-text{
+	width:180px;
+	height:70px;
+	margin-top:10px;
+	font-family:楷书;
+	font-color:#333;
+	font-size:16px;
+}
+.pic-text a:link{
+	color:#666;
+}
+.pic-text a:visited{
+	color:#666;
+}
+#bottom{
+	width:830px;
+	height:40px;
+	margin:0px auto;
+}
+#bottom-left{
+	width:100px;
+	height:30px;
+	float:left;
+	margin:5px;
+	text-align:center;
+	background:url(%E5%9B%BE%E7%89%87/%E9%A6%96%E9%A1%B5%E7%9A%84%E5%9B%BE%E7%89%87/12.jpg);
+	}
+#bottom-center{
+	width:150px;
+	height:30px;
+	margin:5px;
+	float:left;
+	text-align:center;
+	background:url(%E5%9B%BE%E7%89%87/%E9%A6%96%E9%A1%B5%E7%9A%84%E5%9B%BE%E7%89%87/123.jpg);
+}	
+#bottom-right{
+	width:150px;
+	height:30px;
+	float:right;
+	margin:5px;
+	text-align:center;
+	background:url(%E5%9B%BE%E7%89%87/%E9%A6%96%E9%A1%B5%E7%9A%84%E5%9B%BE%E7%89%87/1234.jpg);
+}
+#footer{
+	width:1330px;
+	height:120px;
+	margin:0 auto;
+	background-color:#EAEAEA;
+	}
+#footer-text1{
+	width:1330px;
+	height:130px;
+	margin:10px auto;
+	margin-bottom:0px;
+	
+}
+#footer-text3{
+	width:1330px;
+	height:25px;
+	line-height:25px;
+	text-align:center;
+}
+#footer-text2{
+	width:180px;
+	height:80x;
+	font-size:14px;
+	float:left;
+	margin:5px 20px;
+	color: #575757;
+}
+#footer-text4{
+	width:1330px;
+	height:30px;
+	margin-top:-25px;
+	line-height:30px;
+	background-color:#000;
+}
+.ban {
+	color: #ABABAB;
+	font-size:12px;
+}
+#top a:link{
+	color:#FFF;
+}
+#top a:visited{
+	color:#FFF;
+}
+a:link {
+	text-decoration: none;
+	color: #FFF;
+}
+a:visited {
+	text-decoration: none;
+	color: #FFF;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+</style>
+</head>
+
+<body>
+<div id="top">
+     <div id="top-left">
+       <div id="top-logo"><img src="图片/首页的图片/20121016113836809.jpg" width="73" height="70" /></div>
+       <div id="top-left-text"><font color="#FFFFFF" size="+2">IT初学者</font></div>
+       </div>
+     <div id="top-center">
+               <div class="box1-top-2"><font color="#FFFFFF"><a href="index.html">首页</a></div>
+               <div class="box1-top-1"><a href="新新乐趣/新新乐趣.html">新新乐趣</a></div>
+               <div class="box1-top-1"> <a href="初识入门/推荐书籍.html">初始入门</a>       </div>
+               <div class="box1-top-1"><a href="进阶之路/Linux-1.html">进阶之路</a></div>
+               <div class="box1-top-1"><a href="IT干货/IT干货.html">IT干货</a></font></div>  
+     
+     </div>
+     <div id="top-right"><input type="search" placeholder="请输入关键字" /><img src="图片/首页的图片/搜索2.jpg" align="top" /></div>
+
+
+</div>
+  <div class="banner">
+      <div id="container">
+          <div id="header">
+          <div id="header-left">
+          <div id="header-left-1"></div>
+          <div id="header-left-2"></div>
+          </div>
+          <div id="header-right">
+          <div align="left"></div>
+          </div>
+          </div>
+          <div id="box1">
+          <div id="box2"></div>
+          <div id="box3">
+          <div class="pic-box"><div class="thumb-wrapper"><img src="图片/首页的图片/1.jpg" /><div class="pic-text"><strong>人工智能，拿什么向奇点迫近<br /><br /></strong><font color="#666666"><strong><a href="首页/人工智能.html">>了解更多</a></strong></font></div></div></div>
+          <div class="pic-box"><div class="thumb-wrapper"><img src="图片/首页的图片/2.jpg" /><div class="pic-text"><strong>隐藏在黑暗中的谷歌服务器<br /><br /></strong><font color="#666666"><strong><a href="首页/谷歌服务器.html">>了解更多</a></strong></font></div></div></div>
+          <div class="pic-box"><div class="thumb-wrapper"><img src="图片/首页的图片/3.jpg" /><div class="pic-text"><strong>成就一名卓越的前端开发者<br /><br /></strong><font color="#666666"><strong><a href="首页/前端开发者.html">>了解更多</a></strong></font></div></div></div>
+          <div class="pic-box"><div class="thumb-wrapper"><img src="图片/首页的图片/4.jpg" /><div class="pic-text"><strong>Andrioid开发进阶<br /><br /><br /></strong><font color="#666666"><strong><a href="首页/Android.html">>了解更多</a></strong></font></div></div></div>
+          </div>
+          </div>
+          <br /><br />
+          <hr />
+          <div id="bottom">
+          <div id="bottom-left"><font color="#FFFFFF" size="+2" >延伸</div>
+          <div id="bottom-center"><a href="http://www.chinabgao.com/info/79326.html">IT前景</a></div>
+          <div id="bottom-center"><a href="http://doc.mbalib.com/view/2bf3f3670becc57ed2049d068ad35022.html">IT工作环境</a></div>
+          <div id="bottom-center"><a href="http://www.csdn.net/article/2012-10-09/2810607-future-it-trends">IT发展趋势</a></div>
+          <div id="bottom-right"><a href="https://www.ithome.com/">更多>&gt;&gt;</a></div></font>
+          </div>
+          <div id="footer">
+             <div id="footer-text1">
+                 <div id="footer-text3"><h3><strong>IT主体职业</strong></h3></div>
+                 <div id="footer-text2">
+                            <ul><strong>软件类</strong>
+                            <li class="ban">系统分析师</li>
+                            <li class="ban">程序设计员</li>
+                            <li class="ban">软件测试员</li>
+                            </ul>
+                 </div>
+                 <div id="footer-text2">
+                            <ul><strong>网络类</strong>
+                            <li class="ban">网络管理员</li>
+                            <li class="ban">网络系统设计师</li>
+                            <li class="ban">网络综合布线员</li>
+                            </ul>
+                 </div>
+                 <div id="footer-text2">
+                            <ul><strong>信息系统类</strong>
+                            <li class="ban">信息系统安全师</li>
+                            <li class="ban">信息系统管理员</li>
+                            <li class="ban">数据库管理员</li>
+                            </ul>
+               </div>
+                  <div id="footer-text2">
+                            <ul><strong>应用系统开发类</strong>
+                            <li class="ban">嵌入式系统开发师</li> 
+                            <li class="ban">网站开发师</li>
+                            <li class="ban">游戏程序开发师</li>
+                            </ul>
+                  </div>
+                  <div id="footer-text2">
+                            <ul><strong>制造类</strong>
+                            <li class="ban">半导体器件测试工</li>
+                            <li class="ban">半导体器件制作工艺师</li>
+                            <li class="ban">半导体器件支持工</li>
+                            </ul>
+                 </div>
+                 <div id="footer-text2">
+                            <ul><strong>控制类</strong>
+                            <li class="ban">单片机应用设计师</li>
+                            <li class="ban">控制系统设计师</li>
+                            <li class="ban">数据自动采集与分析员</li>
+                            </ul>
+                 </div>
+            </div>   
+<div id="footer-text4">
+      <p align="center"><font size="-2px" color="#FFFFFF"><a href="关于我们/关于我们.html"><font color="#FF0066">关于我们</font></a>&nbsp;&nbsp;&nbsp;IT入门创建者版权所有&nbsp;&nbsp;Copyright&nbsp;2017-2018&nbsp;晋&nbsp;ICP</font></div>
+        </div>        
+ </div>  
+   
+   
+   
+   
+   
+   
+<div class="swiper-container">
+<div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="图片/首页的图片/bg-5.jpg" /></div>
+            <div class="swiper-slide"><img src="图片/首页的图片/bg-2.jpg" /></div>
+            <div class="swiper-slide"><img src="图片/首页的图片/bg-3.jpg" /></div>
+            <div class="swiper-slide"><img src="图片/首页的图片/bg-4.jpg" /></div>
+            <div class="swiper-slide"><img src="图片/首页的图片/bg-1.jpg" /></div>
+     </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+</div>
+<!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false
+    });
+    </script>
+    
+</body>
+
+</html>
