@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>IT初学者用户使用协议</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="../css样式/swiper.min.css">
+
+	<!-- Demo styles -->
+	<style>
+		html, body {
+			position: relative;
+			height: 100%;
+		}
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 10px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		.menu {
+			min-width: 100px;
+			width: 70%;
+			max-width: 320px;
+
+			background-color: #2C8DFB;
+			color: #fff;
+		}
+		.content {
+			width: 100%;
+		}
+
+		.menu-button {
+			position: absolute;
+			top: 0px; left: 0px;
+
+			padding: 15px;
+
+			cursor: pointer;
+
+			-webkit-transition: .3s;
+			transition: .3s;
+
+			background-color: #2C8DFB;
+
+			/*margin: 14px;
+			border-radius: 5px;*/
+		}
+		.menu-button .bar:nth-of-type(1) {
+			margin-top: 0px;
+		}
+		.menu-button .bar:nth-of-type(3) {
+			margin-bottom: 0px;
+		}
+
+		.bar {
+			position: relative;
+			display: block;
+
+			width: 50px;
+			height: 5px;
+
+			margin: 10px auto;
+			background-color: #fff;
+
+			border-radius: 10px;
+
+			-webkit-transition: .3s;
+			transition: .3s;
+		}
+
+		.menu-button:hover .bar:nth-of-type(1) {
+			-webkit-transform: translateY(1.5px) rotate(-4.5deg);
+			-ms-transform: translateY(1.5px) rotate(-4.5deg);
+			transform: translateY(1.5px) rotate(-4.5deg);
+		}
+		.menu-button:hover .bar:nth-of-type(2) {
+			opacity: .9;
+		}
+		.menu-button:hover .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-1.5px) rotate(4.5deg);
+			-ms-transform: translateY(-1.5px) rotate(4.5deg);
+			transform: translateY(-1.5px) rotate(4.5deg);
+		}
+
+		.cross .bar:nth-of-type(1) {
+			-webkit-transform: translateY(15px) rotate(-45deg);
+			-ms-transform: translateY(15px) rotate(-45deg);
+			transform: translateY(15px) rotate(-45deg);
+		}
+		.cross .bar:nth-of-type(2) {
+			opacity: 0;
+		}
+		.cross .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-15px) rotate(45deg);
+			-ms-transform: translateY(-15px) rotate(45deg);
+			transform: translateY(-15px) rotate(45deg);
+		}
+		.cross:hover .bar:nth-of-type(1) {
+			-webkit-transform: translateY(13.5px) rotate(-40.5deg);
+			-ms-transform: translateY(13.5px) rotate(-40.5deg);
+			transform: translateY(13.5px) rotate(-40.5deg);
+		}
+		.cross:hover .bar:nth-of-type(2) {
+			opacity: .1;
+		}
+		.cross:hover .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-13.5px) rotate(40.5deg);
+			-ms-transform: translateY(-13.5px) rotate(40.5deg);
+			transform: translateY(-13.5px) rotate(40.5deg);
+		}
+		#box{
+			width:300px;
+			height:512px;
+			margin::auto;
+			background-color:#EAEAEA;
+		}
+		#box1{
+	         width:300px;
+	         height:100px;
+	         border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			  line-height:100px;
+		}
+		#box1:hover{
+			background-color:#F03;
+		}
+		#box2{
+			width:300px;
+			height:100px;
+			background:url(assets/img/faces/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg);
+			 border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			 text-align:center;
+			 line-height:100px;
+		}
+		#box3{
+			width:300px;
+	         height:100px;
+			 background:#F03;
+	         border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			 text-align:center;
+			 line-height:100px;
+		}
+		#text{
+			width:100%;
+			height:	100%;
+			text-align:left;
+		}
+#top a:link{
+	color:#FFF;
+}
+#top a:visited{
+	color:#FFF;
+}
+	a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#top{
+	width:1335px;
+	height:80px;
+	background-color:#000;
+	margin:0px auto;
+}
+#top-logo{
+	margin-left:50px;
+	width:73px;
+	height:70px;
+	float:left;
+}
+#top-left{
+	width:290px;
+	height:70px;
+	float:left;
+	margin-top:10px;
+}
+#top-left-text{
+	width:100px;
+	height:30px;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+#top-center{
+	width:730px;
+	height:50px;
+	margin-top:10px;
+	float:left;
+}
+#top-right{
+	width:200px;
+	height:25px;
+	float:right;
+	margin-top:27px;
+	margin-right:50px;
+}
+.box1-top-2{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	background-color:#F00;
+}
+.box1-top-1{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	transition:all 1s;
+}
+.box1-top-1:hover{
+	background-color:#F00;
+}
+#footer-text4{
+	width:1330px;
+	height:30px;
+	margin-top:-10px;
+	background-color:#000;
+}
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<!-- Swiper -->
+<div id="top">
+<div id="top-left"><div id="top-logo"><img src="../图片/首页的图片/20121016113836809.jpg" width="73" height="70" /></div>
+<div id="top-left-text"><font color="#FFFFFF" size="+2">IT初学者</font></div>
+</div>
+     <div id="top-center">
+               <div class="box1-top-1"><font  size="+1" color="#FFFFFF"><a href="../index.html">首页</a></div>
+               <div class="box1-top-1"><a href="../新新乐趣/新新乐趣.html">新新乐趣</a></div>
+               <div class="box1-top-1"><a href="../初识入门/推荐书籍.html">初始入门</a></div>
+               <div class="box1-top-1"><a href="../进阶之路/Linux-1.html">进阶之路</a></div>
+               <div class="box1-top-1"><a href="../IT干货/IT干货.html">IT干货</a></font></div>  
+     
+     </div>
+     <div id="top-right"><input type="search" placeholder="请输入关键字" /><img src="../图片/首页的图片/搜索2.jpg" align="top" /></div>
+
+
+</div>
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+			<div class="swiper-slide menu">
+                   <div id="box">
+                     <div id="box2"><font size="+1" color="#000000">关于</div>
+                     <div id="box1"><a href="版权声明.html">版权声明</a></div>
+                     <div id="box1"><a href="免责声明.html">免责声明</a></div>
+                     <div id="box3"><a href="IT初学者用户使用协议.html">IT初学者用户使用协议</a></div>
+                     <div id="box1"><a href="联系我们.html">联系我们</a></font></div>
+                   </div>
+         </div>
+<div class="swiper-slide content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<div id="text">
+                      <font size="+3" color="#000000"><p align="center">IT初学者用户使用协议<br></font></p>
+　　访问者在接受本网站服务之前，请务必仔细阅读本条款并同意本声明。访问者访问本网站的行为以及通过各类方式利用本网站的行为，都将被视作是对本声明全部内容的无异议的认可;如有异议，请立即跟本网站协商，并取得本网站的书面同意意见。<br>
+<strong>第一条</strong>&nbsp;访问者在从事与本网站相关的所有行为(包括但不限于访问浏览、利用、转载、宣传介绍)时，必须以善意且谨慎的态度行事;访问者不得故意或者过失的损害或者弱化本网站的各类合法权利与利益，不得利用本网站以任何方式直接或者间接的从事违反中国法律、国际公约以及社会公德的行为，且访问者应当恪守下述承诺：<br>
+　　1、传输和利用信息符合中国法律、国际公约的规定、符合公序良俗;<br>
+　　2、不将本网站以及与之相关的网络服务用作非法用途以及非正当用途;<br>
+　　3、不干扰和扰乱本网站以及与之相关的网络服务;<br>
+　　4、遵守与本网站以及与之相关的网络服务的协议、规定、程序和惯例等。<br>
+<strong>第二条</strong>&nbsp;本网站郑重提醒访问者：请在转载或者下载有关作品时务必尊重该作品的版权、著作权;如果您发现有您未署名的作品，请立即和我们联系，我们会在第一时间加上您的署名或作相关处理。<br>
+<strong>第三条</strong>&nbsp;未经常本网站和作者共同同意，其他任何机构不得以任何形式侵犯其作品著作权，包括但不限于：擅自复制、链接、非法使用或转载，或以任何方式建立作品镜像。<br>
+<strong>第四条</strong>&nbsp;本网站所刊载的各类形式(包括但不仅限于文字、图片、图表)的作品仅供参考使用，并不代表本网站同意其说法或描述，仅为提供更多信息，也不构成任何投资建议。对于访问者根据本网站提供的信息所做出的一切行为，除非另有明确的书面承诺文件，否则本网站不承担任何形式的责任。<br>
+<strong>第五条</strong>&nbsp;当本网站以链接形式推荐其他网站内容时，本网站并不对这些网站或资源的可用性负责，且不保证从这些网站获取的任何内容、产品、服务或其他材料的真实性、合法性，对于任何因使用或信赖从此类网站或资源上获取的内容、产品、服务或其他材料而造成(或声称造成)的任何直接或间接损失，本网站均不承担任何责任。<br>
+<strong>第六条</strong>&nbsp;本网站有部分内容来自互联网，如无意中侵犯了哪个媒体、公司、企业或个人等的知识产权，请来电或致函告之，本网站将在规定时间内给予删除等相关处理。<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;第六条以上声明内容的最终解释权归I Team所有。
+
+ 
+
+
+
+
+
+               </div>
+
+			</div>
+		</div>
+	</div>
+<div id="footer-text4">
+                     <p align="center"><font size="-2px" color="#FFFFFF"><a href="关于我们.html"><font color="#FF0066">关于我们</font></a>&nbsp;IT入门创建者版权所有&nbsp;&nbsp;Copyright&nbsp;2017-2018&nbsp;晋&nbsp;ICP</font></div>
+	<!-- Swiper JS -->
+	<script src="../js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var toggleMenu = function(){
+			if (swiper.previousIndex == 0)
+				swiper.slidePrev()
+		}
+		, menuButton = document.getElementsByClassName('menu-button')[0]
+		, swiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto'
+			, initialSlide: 1
+			, resistanceRatio: .00000000000001
+			, onSlideChangeStart: function(slider) {
+				if (slider.activeIndex == 0) {
+					menuButton.classList.add('cross')
+					menuButton.removeEventListener('click', toggleMenu, false)
+				} else
+					menuButton.classList.remove('cross')
+			}
+			, onSlideChangeEnd: function(slider) {
+				if (slider.activeIndex == 0)
+					menuButton.removeEventListener('click', toggleMenu, false)
+				else
+					menuButton.addEventListener('click', toggleMenu, false)
+			}
+			, slideToClickedSlide: true
+		})
+	</script>
+</body>
+</html>

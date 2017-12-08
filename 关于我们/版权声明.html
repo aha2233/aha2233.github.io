@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>版权声明</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+	<!-- Link Swiper's CSS -->
+	<link rel="stylesheet" href="../css样式/swiper.min.css">
+
+	<!-- Demo styles -->
+	<style>
+		html, body {
+			position: relative;
+			height: 100%;
+		}
+		body {
+			background: #eee;
+			font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-size: 14px;
+			color: #000;
+			margin: 0;
+			padding: 0;
+		}
+		.swiper-container {
+			width: 100%;
+			height: 100%;
+		}
+		.swiper-slide {
+			text-align: center;
+			font-size: 18px;
+			background: #fff;
+
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+		}
+		.menu {
+			min-width: 100px;
+			width: 70%;
+			max-width: 320px;
+
+			background-color: #2C8DFB;
+			color: #fff;
+		}
+		.content {
+			width: 100%;
+		}
+
+		.menu-button {
+			position: absolute;
+			top: 0px; left: 0px;
+
+			padding: 15px;
+
+			cursor: pointer;
+
+			-webkit-transition: .3s;
+			transition: .3s;
+
+			background-color: #2C8DFB;
+
+			/*margin: 14px;
+			border-radius: 5px;*/
+		}
+		.menu-button .bar:nth-of-type(1) {
+			margin-top: 0px;
+		}
+		.menu-button .bar:nth-of-type(3) {
+			margin-bottom: 0px;
+		}
+
+		.bar {
+			position: relative;
+			display: block;
+
+			width: 50px;
+			height: 5px;
+
+			margin: 10px auto;
+			background-color: #fff;
+
+			border-radius: 10px;
+
+			-webkit-transition: .3s;
+			transition: .3s;
+		}
+
+		.menu-button:hover .bar:nth-of-type(1) {
+			-webkit-transform: translateY(1.5px) rotate(-4.5deg);
+			-ms-transform: translateY(1.5px) rotate(-4.5deg);
+			transform: translateY(1.5px) rotate(-4.5deg);
+		}
+		.menu-button:hover .bar:nth-of-type(2) {
+			opacity: .9;
+		}
+		.menu-button:hover .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-1.5px) rotate(4.5deg);
+			-ms-transform: translateY(-1.5px) rotate(4.5deg);
+			transform: translateY(-1.5px) rotate(4.5deg);
+		}
+
+		.cross .bar:nth-of-type(1) {
+			-webkit-transform: translateY(15px) rotate(-45deg);
+			-ms-transform: translateY(15px) rotate(-45deg);
+			transform: translateY(15px) rotate(-45deg);
+		}
+		.cross .bar:nth-of-type(2) {
+			opacity: 0;
+		}
+		.cross .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-15px) rotate(45deg);
+			-ms-transform: translateY(-15px) rotate(45deg);
+			transform: translateY(-15px) rotate(45deg);
+		}
+		.cross:hover .bar:nth-of-type(1) {
+			-webkit-transform: translateY(13.5px) rotate(-40.5deg);
+			-ms-transform: translateY(13.5px) rotate(-40.5deg);
+			transform: translateY(13.5px) rotate(-40.5deg);
+		}
+		.cross:hover .bar:nth-of-type(2) {
+			opacity: .1;
+		}
+		.cross:hover .bar:nth-of-type(3) {
+			-webkit-transform: translateY(-13.5px) rotate(40.5deg);
+			-ms-transform: translateY(-13.5px) rotate(40.5deg);
+			transform: translateY(-13.5px) rotate(40.5deg);
+		}
+		#box{
+			width:300px;
+			height:512px;
+			margin::auto;
+			background-color:#EAEAEA;
+		}
+		#box1{
+	         width:300px;
+	         height:100px;
+	         border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			  line-height:100px;
+		}
+		#box1:hover{
+			background-color:#F03;
+		}
+		#box2{
+			width:300px;
+			height:100px;
+			background:url(assets/img/faces/%E6%9C%AA%E6%A0%87%E9%A2%98-1.jpg);
+			 border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			 text-align:center;
+			 line-height:100px;
+		}
+		#box3{
+			width:300px;
+	         height:100px;
+			 background:#F03;
+	         border-bottom-width: 3px;
+	         border-bottom-style: solid;
+	         border-bottom-color:#999;
+			 text-align:center;
+			 line-height:100px;
+		}
+		#text{
+			width:100%;
+			height:100%;
+			text-align:left;
+		}
+		#top a:link{
+	color:#FFF;
+}
+#top a:visited{
+	color:#FFF;
+}
+	a:link {
+	color: #000;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+	color: #000;
+}
+a:hover {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+#top{
+	width:1335px;
+	height:80px;
+	background-color:#000;
+	margin:0px auto;
+}
+#top-logo{
+	margin-left:50px;
+	width:73px;
+	height:70px;
+	float:left;
+}
+#top-left{
+	width:290px;
+	height:70px;
+	float:left;
+	margin-top:10px;
+}
+#top-left-text{
+	width:100px;
+	height:30px;
+	margin-top:20px;
+	margin-left:20px;
+	float:left;
+}
+#top-center{
+	width:730px;
+	height:50px;
+	margin-top:10px;
+	float:left;
+}
+#top-right{
+	width:200px;
+	height:25px;
+	float:right;
+	margin-top:27px;
+	margin-right:50px;
+}
+.box1-top-2{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	background-color:#F00;
+}
+.box1-top-1{
+	width:100px;
+	height:22px;
+	margin:14px 22px;
+	text-align:center;
+	float:left;
+	transition:all 1s;
+}
+.box1-top-1:hover{
+	background-color:#F00;
+}
+#footer-text4{
+	width:1330px;
+	height:30px;
+	margin-top:-10px;
+	background-color:#000;
+}
+    </style>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+<div id="top">
+     <div id="top-left"><div id="top-logo"><img src="../图片/首页的图片/20121016113836809.jpg" width="73" height="70" /></div>
+     <div id="top-left-text"><font color="#FFFFFF" size="+2">IT初学者</font></div>
+     </div>
+     <div id="top-center">
+               <div class="box1-top-1"><font  size="+1" color="#FFFFFF"><a href="../index.html">首页</a></div>
+               <div class="box1-top-1"><a href="../新新乐趣/新新乐趣.html">新新乐趣</a></div>
+               <div class="box1-top-1"><a href="../初识入门/推荐书籍.html">初始入门</a></div>
+               <div class="box1-top-1"><a href="../进阶之路/Linux-1.html">进阶之路</a></div>
+               <div class="box1-top-1"><a href="../IT干货/IT干货.html">IT干货</a></font></div>  
+     
+     </div>
+     <div id="top-right"><input type="search" placeholder="请输入关键字" /><img src="../图片/首页的图片/搜索2.jpg" align="top" /></div>
+
+
+</div>
+	<!-- Swiper -->
+	<div class="swiper-container">
+    <div class="swiper-wrapper">
+			<div class="swiper-slide menu">
+                   <div id="box">
+                     <div id="box2"><font size="+1" color="#000000">关于</div>
+                     <div id="box3"><a href="版权声明.html">版权声明</a></div>
+                     <div id="box1"><a href="免责声明.html">免责声明</a></div>
+                     <div id="box1"><a href="IT初学者用户使用协议.html">IT初学者用户使用协议</a></div>
+                     <div id="box1"><a href="联系我们.html">联系我们</a></font></div>
+                   </div>
+         </div>
+<div class="swiper-slide content">
+				<div class="menu-button">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</div>
+				<div id="text">
+                      <font size="+3" color="#000000"><p align="center">版权声明</p></font>
+
+<p>1. IT初学者用户在本网站所有栏目中所发布分享的资源，版权均归原作者所有，本站仅供大家学习与参考，请勿使用于商业用途。如需作商业用途，请与原作者联系。</p>
+
+<p>2. 如个人或单位发现IT初学者上存在侵犯其自身合法权益的内容，请及时与I Team取得联系，并提供具有法律效应的证明材料，以便I Team作出处理。</p>
+
+<p>3. 不得复制或仿造本站或者在非IT初学者所属服务器上建立镜像。</p>
+
+<p>4. IT初学者的标识、源代码及所有页面的版式设计等，版权归I Team所有。未经授权，不得用于除IT初学者之外的任何站点。</p>
+
+
+               </div>
+
+	  </div>
+	  </div>
+</div>
+<div id="footer-text4">
+                     <p align="center"><font size="-2px" color="#FFFFFF"><a href="关于我们.html"><font color="#FF0066">关于我们</font></a>&nbsp;&nbsp;&nbsp;IT入门创建者版权所有&nbsp;&nbsp;Copyright&nbsp;2017-2018&nbsp;晋&nbsp;ICP</font></div>
+<!-- Swiper JS -->
+	<script src="../js/swiper.min.js"></script>
+
+	<!-- Initialize Swiper -->
+	<script>
+		var toggleMenu = function(){
+			if (swiper.previousIndex == 0)
+				swiper.slidePrev()
+		}
+		, menuButton = document.getElementsByClassName('menu-button')[0]
+		, swiper = new Swiper('.swiper-container', {
+			slidesPerView: 'auto'
+			, initialSlide: 1
+			, resistanceRatio: .00000000000001
+			, onSlideChangeStart: function(slider) {
+				if (slider.activeIndex == 0) {
+					menuButton.classList.add('cross')
+					menuButton.removeEventListener('click', toggleMenu, false)
+				} else
+					menuButton.classList.remove('cross')
+			}
+			, onSlideChangeEnd: function(slider) {
+				if (slider.activeIndex == 0)
+					menuButton.removeEventListener('click', toggleMenu, false)
+				else
+					menuButton.addEventListener('click', toggleMenu, false)
+			}
+			, slideToClickedSlide: true
+		})
+	</script>
+</body>
+</html>
