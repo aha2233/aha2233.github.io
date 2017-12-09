@@ -1,0 +1,45 @@
+body{
+  color: #000;
+  background: #F3F3F3;
+}
+.i-content-box{
+  min-width: 1200px;
+  text-align: center;
+}
+.i-banner{
+  padding-top: 85px;
+  position: relative;
+}
+.i-img-list{
+  
+}
+.i-img-list img{
+  width: 100%;
+}
+.i-img-list li{
+  display: none;
+  height: 100%;
+}
+.i-img-icon{
+  position: absolute;
+  left: 49%;
+  top: 90%;
+  float: left;
+}
+.i-img-icon li{
+  position: relative;
+  right: 50%;
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+.i-img-icon li a{
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: url("file:///C|/Users/Administrator/images/img_nomal.png") no-repeat;
+}
+.i-img-icon .img-icon-show a{
+  background: url("file:///C|/Users/Administrator/images/img_active.png") no-repeat;
+}
+
